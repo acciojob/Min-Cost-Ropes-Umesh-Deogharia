@@ -18,6 +18,7 @@ function mincost(arr)
 		}
 			arr.spice(i,0,newropes);
 	}
+	return totalcost;
 }
 
 module.exports=mincost;
