@@ -11,12 +11,9 @@ function mincost(arr)
 		let rope2 = arr.shift();
 		
 		let newropes = rope1 + rope2;
+		arr.push(newropes);
 		totalcost += newropes;
-		let i = 0;
-		while (i<arr.length && arr[i]<newropes) {
-			i++
-		}
-			arr.spice(i,0,newropes);
+		arr.sort((a,b)=>a-b);
 	}
 	return totalcost;
 }
